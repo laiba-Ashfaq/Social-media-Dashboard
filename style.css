@@ -1,0 +1,333 @@
+*{
+    box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
+}
+body{
+    margin: 0px;
+    background-color: aliceblue;
+}
+.dashboard{
+    padding: 0px 15px;
+    margin: 0 auto;
+}
+/* navigation */
+.dashboard .navigation{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 10px;
+}
+.dashboard .navigation img.logo{
+   width: 50px;
+   height: 50px;
+   border-radius: 10px;
+   margin-top: -220px;
+   margin-bottom: 10px;
+}
+.dashboard .navigation img.user{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+ }
+ .dashboard .navigation div .material-icons-outlined{
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 30px;
+    color: #727272;
+ }
+ .dashboard .navigation div{
+    margin-top:10px 
+ }
+ /* main dashboard */
+ /* search */
+ .dashboard .main .search .form{
+    margin-top: 50px;
+    position: relative;
+
+ }
+ .dashboard .main .search form input{
+    width: 100%;
+    font-size: 16px;
+    padding: 10px 10px 10px 60px;
+    border: 1px solid #dadada;
+    background-color: rgba(0 0 0 / 0);    
+}
+.dashboard .main .search .material-icons-outlined{
+   position: absolute;
+   left: 20px;
+   top: 70px;
+}
+
+.dashboard .main .notification .material-icons-outlined{
+   margin-top: 20px;
+ }
+ .dashboard .main .notification .material-icons-outlined:nth-child(1){
+    margin-right: 15px;
+    position: relative;
+ }
+ .dashboard .main .notification .material-icons-outlined:nth-child(1)::before{
+   content: '';
+   width: 10px;
+   height: 10px;
+   border-radius: 50%;
+   background-color: rgb(160, 70, 70);
+   position: absolute;
+   top: 5px;
+}
+ .dashboard .main .title{
+    margin-bottom: 30px;
+ }
+ .dashboard .main .title h1{
+    font-size: 35px;
+    line-height: 0px;
+ }
+ .dashboard .main .title form{
+    margin-top: 40px;
+ }
+ .dashboard .main .title form label{
+    margin-right: 15px;
+    color: #727272;
+    font-size: 16px;
+ }
+ .dashboard .main .title form select{
+    border: none;
+    font-size: 16px;
+    background-color: rgba(0 0 0 / 0);
+ }
+ .dashboard .main .metrices-list .metrices h2{
+    font-size: 20px;
+    line-height: 0;
+ }
+ .dashboard .main .metrices-list .metrices p{
+    font-size: 20px;
+    margin-top: 30px;
+    line-height: 0;
+    color: #727272;
+ }
+ .dashboard .main .metrices-list .metrices .follow{
+    font-size: 22px;
+    line-height: 0;
+    color:black;
+
+ }
+ .dashboard .main .metrices-list .metrices .material-icons-outlined{
+   margin-top: 20px;
+   margin-left: 60%;
+  
+ }
+.dashboard .main .metrices-list .metrices {
+   padding: 20px 20px 20px 60px;
+   background-color: #fff;
+   box-shadow: 1px 1px 40px rgba(0 0 0 / 0.1);
+   margin-bottom: 20px;
+   border-radius: 10px;
+   position: relative;
+}
+
+
+/* Notification and User Profile */
+.dashboard .main .header .right-section {
+   display: flex;
+   align-items: center;
+}
+
+.dashboard .main .header .right-section .notification {
+   display: flex;
+   align-items: center;
+   margin-right: 20px;
+}
+
+.dashboard .main .header .right-section .notification .material-icons-outlined {
+   margin: 0 5px;
+   font-size: 30px;
+   color: #727272;
+   position: relative;
+}
+
+.dashboard .main .header .right-section .notification .material-icons-outlined:nth-child(1)::before {
+   content: '';
+   width: 10px;
+   height: 10px;
+   border-radius: 50%;
+   background-color: rgb(160, 70, 70);
+   position: absolute;
+   top: -5px;
+   right: -5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.dashboard .main .project_list .category {
+   width: 30px;
+   height: 50px;
+   background-color: rebeccapurple;
+   border-radius: 0px 10px 10px 0px;
+   position: absolute;
+   left: 0;
+}
+/*Secondary Statics*/
+/* Chart */
+.dashboard .secondary  .complete{
+   text-align: center;
+   margin: 40px 0px;
+}
+.dashboard .secondary h2{
+   justify-content: center;
+   text-align: center;
+}
+.dashboard .secondary .complete h3{
+   line-height: 0px;
+}
+.dashboard .secondary .Recent,
+.dashboard .secondary .Chart{
+   background-color: #fff;
+   padding: 15px;
+   height: 240px;
+   position: relative;
+   margin-bottom: 30px;
+}
+
+
+.dashboard .secondary .listing h2 {
+   margin: 0;
+   font-size: 18px;
+   color: #333;
+}
+
+/* ==========================
+Media Query 768xp 
+============================= */
+@media only screen and (min-width: 768px){
+   /* Dashboard Search */
+   .dashboard .main .search{
+       display: flex;
+       justify-content: space-between;
+       margin-top: 70px;
+       margin-right: 70%;
+       margin-bottom: 50px;
+   }
+   .dashboard .main .search .material-icons-outlined{
+      margin-left: 8%;
+      margin-top: 20px;
+   }
+   .dashboard .main .notification .material-icons-outlined .notification{
+      margin-left: 25%;
+    display:flex;
+    position: absolute;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+   
+   }
+   .dashboard .main .notification .material-icons-outlined .account{
+      margin-left: 25%;
+    display:flex;
+    position: relative;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+   
+   }
+   .dashboard .main .search form{
+       margin-top: 10px;
+   }
+   section.main .metrices-list{
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: space-between;
+   }
+   section.main .metrices-list .metrices{
+       width: 47%;
+   }
+   section.main .metrices-list .metrices span{
+       margin-top: 15px;
+   }
+
+   /* Recent Projects */
+   section.secondary{
+       display: flex;
+       justify-content: space-between;
+       flex-wrap: nowrap;
+       background-color: #ffffff;
+       padding-top: 70px;
+   }
+   .dashboard .secondary .Chart{
+      margin-top: 30%;
+       width: 90%;
+       height: 80%;
+   }
+   section.secondary .Recent{
+      margin-bottom:20px ;
+       width: 55%;
+   }
+   section.secondary .Recent .listing span{
+       margin-top: 15px;
+   }
+}
+
+@media only screen and (min-width: 1024px){
+   .dashboard .navigation,
+   .dashboard .navigation div span,
+   section.secondary{
+       display: block;
+   }
+   .dashboard .navigation{
+       width: 60px;
+       position: fixed;
+       z-index: 10;
+   }
+   section.main{
+       width: 60%;
+       margin-left: 90px;
+       margin-right: 20px;
+   }
+   section.secondary{
+       width: 27%;
+       padding-top: 0px;
+       position: fixed;
+       top: 20px;
+       right: 0px;
+       background-color: transparent;
+   }
+   section.secondary .Chart,
+   section.secondary .Recent{
+       width: 100%;
+       border-radius: 10px;
+   }
+   .dashboard .navigation div{
+       margin-top: 19vh;
+       margin-bottom: 19vh;
+   }
+   .dashboard .navigation div span{
+       margin-top: 5vh;
+   }
+}
+
+@media only screen and (min-width: 1111px){
+   section.main .project_list .project{
+       width: 32%;
+   }
+   section.main{
+       width: 65%;
+   }
+}
+@media only screen and (min-width: 1500px){
+   section.secondary .recent_project .listing:nth-child(4){
+       display: none;
+   }
+}
